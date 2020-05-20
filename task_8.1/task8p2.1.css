@@ -1,0 +1,8 @@
+.rect1, .rect2, .rect3, .rect4, .rect5{
+    position: absolute;
+    height: 70%;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

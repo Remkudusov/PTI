@@ -1,0 +1,21 @@
+body li ul {
+    list-style: none;
+}
+
+body li ul li {
+    margin: 0;
+    padding-left: 1.5em;
+    position: relative;
+}
+
+body li ul li:after {
+    content: '';
+    height: .4em;
+    width: .4em;
+    background: black;
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    top: .25em;
+    left: 0;
+}

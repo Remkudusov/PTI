@@ -1,0 +1,45 @@
+.leftDownCorner{
+    position: absolute;
+    width: 45%;
+    height: 45%;
+    left: 0;
+    top: 55%;
+    background: red;
+}
+
+.leftUpCorner{
+    position: absolute;
+    width: 45%;
+    height: 45%;
+    left: 0;
+    top: 0%;
+    background: violet;
+}
+
+.rightDownCorner{
+    position: absolute;
+    width: 45%;
+    height: 45%;
+    left: 55%;
+    top: 55%;
+    background: green;
+}
+
+.rightUpCorner{
+    position: absolute;
+    width: 45%;
+    height: 45%;
+    left: 55%;
+    top: 0%;
+    background: gray;
+}
+
+.center{
+    position: absolute;
+    width: 45%;
+    height: 45%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: blue;
+}
