@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Задание 11</title>
+    <link rel="stylesheet" href="task11.css">
+    <script type="text/javascript" src="task11.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Запись на зачёт/экзамен</h1>
+    </div>
+    <div class="leftBlock">
+        <h5>ФИО студента</h5>
+        <input type="text" class="FIO_input" id="FIO">
+        <h5>Курс</h5>
+        <h5><select name="select" size="1" id="Course">
+            <option selected value="s1">1 курс</option>
+            <option value="s2">2 курс</option>
+            <option value="s3">3 курс</option>
+            <option value="s4">4 курс</option>
+        </select></h5>
+        <h5>Факультет</h5>
+        <h5><select name="select" size="1" id="Faculty">
+            <option selected value="s1">ИСАУ</option>
+            <option value="s2">ФЕИН</option>
+            <option value="s3">ИФУ</option>
+            <option value="s4">ФСГН</option>
+        </select></h5>
+        <h5>Номер группы</h5>
+        <input type="text" class="group" id="Group">
+    </div>
+    <div class="rightBlock">
+        <h5>Предмет для сдачи</h5>
+        <h5><select name="select" size="1" id="Subject">
+            <option selected value="s1">Философия</option>
+            <option value="s2">ПТИ</option>
+            <option value="s3">Природоведение</option>
+            <option value="s4">Физика</option>
+        </select></h5>
+        <h5>Преподаватель</h5>
+        <h5><select name="select" size="1" id="Teacher">
+            <option selected value="s1">Иванов</option>
+            <option value="s2">Петров</option>
+            <option value="s3">Сидоров</option>
+            <option value="s4">Хованский</option>
+        </select></h5>
+        <div class="container">
+            <div class="mounth">
+                <h5>Месяц сдачи</h5>
+                <h5><select name="select" size="1" id="Mounth">
+                    <option selected value="s1">Май</option>
+                    <option value="s2">Июнь</option>
+                    <option value="s3">Июль</option>
+                    <option value="s4">Август</option>
+                </select></h5>
+            </div>
+            <div class="day">
+                <h5>Число сдачи</h5>
+                <h5><select name="select" size="1" id="Day">
+                    <option selected value="s1">1</option>
+                    <option value="s2">8</option>
+                    <option value="s3">15</option>
+                    <option value="s4">22</option>
+                </select></h5>
+            </div>
+            <div class="time">
+                <h5>Время сдачи</h5>
+                <h5><select name="select" size="1" id="Time">
+                    <option selected value="s1">10:00</option>
+                    <option value="s2">12:00</option>
+                    <option value="s3">14:00</option>
+                    <option value="s4">16:00</option>
+                </select></h5>
+            </div>
+        </div>
+        <h5>Форма сдачи</h5>
+        <div class="studyForm">
+            <div>
+                <input id="radio-1" type="radio" name="radio" value="1" checked>
+                <label for="radio-1">очная</label>
+            </div>
+            <div>
+                <input id="radio-2" type="radio" name="radio" value="1">
+                <label for="radio-2">дистанционная</label>
+            </div>
+        </div>
+    </div>
+    <button class="but" name="but" value="click" onclick="start()"><h3>Записаться</h3></button>
+    <div id="result"></div>
+</body>
+</html>

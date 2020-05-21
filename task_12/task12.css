@@ -1,0 +1,40 @@
+.column1 {
+    position: absolute;
+    width: 46%;
+    height: 80%;
+    top: 10%;
+    left: 2%;
+    border: black dashed 10px;
+    background: darksalmon;
+    border-radius: 25px;
+}
+
+.column2 {
+    position: absolute;
+    width: 46%;
+    height: 80%;
+    top: 10%;
+    left: 52%;
+    border: black dashed 10px;
+    background: darksalmon;
+    border-radius: 25px;
+}
+
+.block {
+    position: relative;
+    width: 90%;
+    height: 20%;
+    margin: calc(5% - 5px);
+    border: black dashed 5px;
+    background: grey;
+    border-radius: 15px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+h3 {
+    position: relative;
+    text-align: center;
+    color: blue;
+
+}
