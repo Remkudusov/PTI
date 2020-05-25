@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Задание 15</title>
+    <link rel="stylesheet" href="task15.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h3 class="tablinks" onclick="openTab('tab1')">Обо мне</h3>
+            <h3 class="tablinks" onclick="openTab('tab2')">Мой дом</h3>
+            <h3 class="tablinks" onclick="openTab('tab3')">Мои домашние животные</h3>
+            <h3 class="tablinks" onclick="openTab('tab4')">Мои хобби</h3>
+            <h3 class="tablinks" onclick="openTab('tab5')">Написать мне</h3>
+        </div>
+        <div class="main">
+            <div class="tab1" id="tab1">
+                <img src="rem.jpg">
+                <h1>Привет!</h1>
+                <p>Меня зовут Рэм, я обычный парень, который хочет рассказать о себе всему миру с помощью HTML, CSS и JavaScript!</p>
+                <p style="top: 50%">Переключайся в шапке сайта на различные вкладки. Там я показываю тебе то, чем я занимаюсь, свои предпочтения и так далее. Чувствуй себя как дома!</p>
+            </div>
+            <div class="tab2" id="tab2">
+                <h1>Где я живу?</h1>
+                <p>Я живу в Симферопольском районе в селе Трёхпрудное. Своё село я, к сожалению, не фотографирую, поэтому просто покажу его на карте :)</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11304.673720001023!2d34.0195051420103!3d44.89956934066769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40eadbe61728745d%3A0xa65c1ae8892066d6!2z0KLRgNC10YXQv9GA0YPQtNC90L7QtQ!5e0!3m2!1sru!2sde!4v1590396231056!5m2!1sru!2sde" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div class="tab3" id="tab3">
+                <h1>Мои домашние животные</h1>
+                <p>У меня есть кошка и собака. Собаку зовут Матрос, а кошку - Маша (я называю её Машка). Мы с Матросом очень похожи - что я, что он - не любим фотографироваться. Зато Машка в кадре - писанная красавица...</p>
+                <div class="gallery">
+                    <img src="cat1.jpg">
+                    <img src="cat2.jpg">
+                    <img src="cat3.jpg">
+                </div>
+            </div>
+            <div class="tab4" id="tab4">
+                <h1>Мои хобби</h1>
+                <div class="hobby1">
+                    <h2>Программирование</h2>
+                    <p>Пожалуй, моё самое главное хобби. И, по совместительству, моя профессия. Программировать я могу буквально днями, так как данное занятие мне доставляет много удовольствия.</p>
+                </div>
+                <div class="hobby2">
+                    <h2>Бег</h2>
+                    <p>Бег - очень полезная для нашего организма штука. Ещё 5 лет назад я взял себе за правило бегать утром 15 минут и вечером 30 минут. В результате то, что раньше давалось с трудом, сегодня - стало моим хобби.</p>
+                </div>
+                <div class="hobby3">
+                    <h2>Футбол</h2>
+                    <p>Любой спорт так или иначе полезен для организма. Однако для меня футбол полезен ещё и тем, что он учит принимать решения с огромной скоростью во время игры. За секунду игра твой команды может поменяться полностью.</p>
+                </div>
+                <div class="hobby4">
+                    <h2>Велоспорт</h2>
+                    <p>С самого детства я гонял со своими друзьями по дворам на велосипеде. Мы устраивали гонки, ехали по разным местам, путешествовали. Сейчас я, конечно, на велосипеде часто не езжу, но если есть хорошее настроение - с удовольствием!</p>
+                </div>
+            </div>
+            <div class="tab5" id="tab5">
+                <h1>Форма обратной связи</h1>
+                <form>
+                    <input id="item" type="text" placeholder="Напишите мне что-нибудь..." required />
+                </form>
+                <p id="message"></p>
+                <button onclick="send()">Отправить</button>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="contacts">
+                <h1>Контакты</h1>
+                <div class="position">
+                    <img src="location.png">
+                    <p>Россия, Санкт-Петербург, Литейный проспект, 31Б, кв. 40, 718911</p>
+                </div>
+            </div>
+            <div class="socials">
+                <h1>Я в соцсетях</h1>
+                <div class="socNet">
+                    <a href="https://www.facebook.com/people/Рэм-Кудусов/100007986062725"><img src="facebook.svg" class="icon"></a>
+                    <a href="https://www.instagram.com/kudusovrem/"><img src="instagram.svg" class="icon"></a>
+                    <a href="https://twitter.com/a12f35b06a3f46c"><img src="twitter.svg" class="icon"></a>
+                    <a href="https://vk.com/rem.kudusov"><img src="vk1.svg" class="icon"></a>
+                    <a href="https://www.youtube.com/channel/UCY1jtj656ebsCVm3dKOPWmw?view_as=subscriber"><img src="youtube.svg" class="icon"></a>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="task15.js"></script>
+    </div>
+</body>
+</html>

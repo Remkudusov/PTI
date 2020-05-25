@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Задание 14</title>
+    <link rel="stylesheet" href="task14.css">
+    <script type="text/javascript" src="task14.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart1);
+
+        google.charts.load("current", {packages:["corechart"]});
+        google.charts.setOnLoadCallback(drawChart2);
+
+        google.charts.load("current", {packages:["corechart"]});
+        google.charts.setOnLoadCallback(drawChart3);
+    </script>
+</head>
+<body>
+    <table id="table1">
+        <caption>
+            Рейтинг доходов компаний по годам в млрд. руб.
+        </caption>
+        <thead>
+            <tr>
+                <td>Годы</td>
+                <th>Сбербанк</th>
+                <th>Магнит</th>
+                <th>X5 Retail Group</th>
+                <th>РЖД</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>2010</th>
+                <td>155</td>
+                <td>145</td>
+                <td>198</td>
+                <td>134</td>
+            </tr>
+            <tr>
+                <th>2011</th>
+                <td>118</td>
+                <td>689</td>
+                <td>187</td>
+                <td>924</td>
+            </tr>
+            <tr>
+                <th>2012</th>
+                <td>218</td>
+                <td>254</td>
+                <td>121</td>
+                <td>712</td>
+            </tr>
+            <tr>
+                <th>2013</th>
+                <td>211</td>
+                <td>290</td>
+                <td>828</td>
+                <td>999</td>
+            </tr>
+            <tr>
+                <th>2014</th>
+                <td>191</td>
+                <td>287</td>
+                <td>406</td>
+                <td>161</td>
+            </tr>
+            <tr>
+                <th>2015</th>
+                <td>168</td>
+                <td>251</td>
+                <td>507</td>
+                <td>926</td>
+            </tr>
+            <tr>
+                <th>2016</th>
+                <td>166</td>
+                <td>699</td>
+                <td>132</td>
+                <td>264</td>
+            </tr>
+            <tr>
+                <th>2017</th>
+                <td>127</td>
+                <td>346</td>
+                <td>681</td>
+                <td>560</td>
+            </tr>
+            <tr>
+                <th>2018</th>
+                <td>108</td>
+                <td>736</td>
+                <td>458</td>
+                <td>554</td>
+            </tr>
+        </tbody>
+    </table>
+    <div id="curve_chart" style="width: 900px; height: 500px;"></div>
+    <div id="barchart_values" style="width: 900px; height: 400px;"></div>
+    <div id="piechart_3d" style="width: 900px; height: 500px;"></div>
+</body>
+</html>
